@@ -1,7 +1,9 @@
-package com.example.groupassignmentrun1;
+package com.example.groupassignmentrun1.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.groupassignmentrun1.R;
 
 
 public class MainActivity extends AppCompatActivity {
