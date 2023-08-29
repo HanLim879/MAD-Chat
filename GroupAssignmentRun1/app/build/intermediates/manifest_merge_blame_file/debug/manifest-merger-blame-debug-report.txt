@@ -5,83 +5,83 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-7-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
+7-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
 8        android:minSdkVersion="16"
-8-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:8:9-35
+8-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:8:9-35
 9        android:targetSdkVersion="30" />
-9-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:9:9-38
+9-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:9:9-38
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:11:5-67
-11-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:11:22-64
+11-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:11:5-67
+11-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:11:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:12:5-79
-12-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:12:22-76
+12-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:12:5-79
+12-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:12:22-76
 13    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-13-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:13:5-68
-13-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:13:22-65
+13-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:13:5-68
+13-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:13:22-65
 14    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-14-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:14:5-82
-14-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:14:22-79
+14-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:14:5-82
+14-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:14:22-79
 15
 16    <application
-16-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:16:5-45:19
+16-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:16:5-45:19
 17        android:name="androidx.multidex.MultiDexApplication"
-17-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:17:9-61
+17-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:17:9-61
 18        android:allowBackup="true"
-18-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:18:9-35
+18-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:18:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:19:9-77
+19-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:19:9-77
 20        android:debuggable="true"
-20-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:20:9-35
+20-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:20:9-35
 21        android:icon="@mipmap/ic_launcher"
-21-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:21:9-43
+21-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:21:9-43
 22        android:label="@string/app_name"
-22-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:22:9-41
+22-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:22:9-41
 23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:23:9-54
+23-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:23:9-54
 24        android:supportsRtl="true"
-24-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:24:9-35
+24-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:24:9-35
 25        android:testOnly="true"
-25-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:25:9-32
+25-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:25:9-32
 26        android:theme="@style/Theme.GroupAssignmentRun1" >
-26-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:26:9-57
+26-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:26:9-57
 27
 28        <!-- Specify your launcher activity -->
 29        <activity
-29-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:28:9-36:20
+29-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:28:9-36:20
 30            android:name="com.example.groupassignmentrun1.activities.SplashActivity"
-30-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:29:13-54
+30-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:29:13-54
 31            android:exported="true" >
-31-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:30:13-36
+31-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:30:13-36
 32            <intent-filter>
-32-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:31:13-35:29
+32-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:31:13-35:29
 33                <action android:name="android.intent.action.MAIN" />
-33-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:32:17-69
-33-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:32:25-66
+33-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:32:17-69
+33-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:32:25-66
 34
 35                <category android:name="android.intent.category.LAUNCHER" />
-35-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:34:17-77
-35-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:34:27-74
+35-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:34:17-77
+35-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:34:27-74
 36            </intent-filter>
 37        </activity> <!-- Define other activities here -->
 38        <activity
-38-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:37:9-39:58
+38-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:37:9-39:58
 39            android:name="com.example.groupassignmentrun1.activities.SignUpActivity"
-39-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:38:13-54
+39-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:38:13-54
 40            android:windowSoftInputMode="adjustResize" />
-40-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:39:13-55
+40-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:39:13-55
 41        <activity
-41-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:40:9-43:58
+41-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:40:9-43:58
 42            android:name="com.example.groupassignmentrun1.activities.SignInActivity"
-42-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:41:13-54
+42-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:41:13-54
 43            android:exported="false"
-43-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:42:13-37
+43-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:42:13-37
 44            android:windowSoftInputMode="adjustResize" />
-44-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:43:13-55
+44-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:43:13-55
 45        <activity android:name="com.example.groupassignmentrun1.activities.MainActivity" />
-45-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:44:9-61
-45-->C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:44:19-58
+45-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:44:9-61
+45-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:44:19-58
 46
 47        <receiver
 47-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ILLEGEAR\\OneDrive\\exam\\GitHub\\MAD-Chat\\GroupAssignmentRun1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\ILLEGEAR\\Downloads\\MAD-Chat\\GroupAssignmentRun1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ILLEGEAR\\.gradle\\caches\\transforms-3\\8c22e8f45e62b7ec7336d2dca5a60c17\\transformed\\appcompat-1.3.1\\res\\values\\values.xml",
@@ -40,6 +40,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\ILLEGEAR\\Downloads\\MAD-Chat\\GroupAssignmentRun1\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,719",
+                        "endColumns": "143,81,103,108,119,104,81",
+                        "endOffsets": "194,276,380,489,609,714,796"
+                    },
+                    "to": {
+                        "startLines": "1930,1938,1939,1940,1941,1942,2013",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "102077,102856,102938,103042,103151,103271,114250",
+                        "endColumns": "143,81,103,108,119,104,81",
+                        "endOffsets": "102216,102933,103037,103146,103266,103371,114327"
+                    }
+                },
+                {
                     "source": "C:\\Users\\ILLEGEAR\\.gradle\\caches\\transforms-3\\18384c86335711c334f11c6f010cef73\\transformed\\viewpager2-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -73,6 +90,42 @@
                         "startOffsets": "102774",
                         "endColumns": "81",
                         "endOffsets": "102851"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ILLEGEAR\\Downloads\\MAD-Chat\\GroupAssignmentRun1\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "9,8,7,2,3,4,10,5,6",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "392,339,287,57,100,148,433,196,246",
+                        "endColumns": "39,51,50,41,46,46,61,48,39",
+                        "endOffsets": "427,386,333,94,142,190,490,240,281"
+                    },
+                    "to": {
+                        "startLines": "533,541,542,565,566,571,576,579,590",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "27135,27633,27685,29105,29147,29494,29829,30006,30758",
+                        "endColumns": "39,51,50,41,46,46,61,48,39",
+                        "endOffsets": "27170,27680,27731,29142,29189,29536,29886,30050,30793"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ILLEGEAR\\Downloads\\MAD-Chat\\GroupAssignmentRun1\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "5,1",
+                        "startColumns": "4,4",
+                        "startOffsets": "311,64",
+                        "endLines": "7,4",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,305"
+                    },
+                    "to": {
+                        "startLines": "4281,4580",
+                        "startColumns": "4,4",
+                        "startOffsets": "263787,284631",
+                        "endLines": "4283,4583",
+                        "endColumns": "12,12",
+                        "endOffsets": "263950,284867"
                     }
                 },
                 {
@@ -241,20 +294,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ILLEGEAR\\OneDrive\\exam\\GitHub\\MAD-Chat\\GroupAssignmentRun1\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\ILLEGEAR\\Downloads\\MAD-Chat\\GroupAssignmentRun1\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
                     "from": {
-                        "startLines": "10,1,6,9,4,3,11,5,7,8,2",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "490,16,278,428,192,128,538,232,340,384,73",
-                        "endColumns": "47,56,61,61,39,63,37,45,43,43,54",
-                        "endOffsets": "533,68,335,485,227,187,571,273,379,423,123"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
                     },
                     "to": {
-                        "startLines": "1900,1901,1928,1929,1932,1955,2006,2007,2015,2016,2018",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "98571,98619,101953,102015,102266,104638,113364,113402,114385,114429,114544",
-                        "endColumns": "47,56,61,61,39,63,37,45,43,43,54",
-                        "endOffsets": "98614,98671,102010,102072,102301,104697,113397,113443,114424,114468,114594"
+                        "startLines": "540",
+                        "startColumns": "4",
+                        "startOffsets": "27576",
+                        "endColumns": "56",
+                        "endOffsets": "27628"
                     }
                 },
                 {
@@ -272,6 +325,23 @@
                         "startOffsets": "30841,31312,31824,32336,32848,33360,33872,34384,34896,35408,35920,36000,36510,37022,37534,38046,38558,39070,39582,40094,40606,41118,41198,41708,42220,42732,43244,43756,44268,44780,45292,45804,46316,46396,46906,47418,47930,48442,48954,49466,49978,50490,51002,51514,51594,52104,52616,53128,53640,54152,54664,55176,55688,56200,56712,56792,56915,56997,57079,57161,57243,57325,57407,57489,57571,57653,57733,57813,57895,57977,58059,58141,58223,58305,58387,58469,58551,58631,58711,58793,58875,58957,59039,59121,59203,59285,59367,59449,59529,59609,59691,59773,59855,59937,60019,60101,60183,60265,60347,60427",
                         "endColumns": "42,40,40,40,40,40,40,40,40,40,40,38,40,40,40,40,40,40,40,40,40,40,38,40,40,40,40,40,40,40,40,40,40,38,40,40,40,40,40,40,40,40,40,40,38,40,40,40,40,40,40,40,40,40,40,38,40,40,40,40,40,40,40,40,40,40,38,40,40,40,40,40,40,40,40,40,40,38,40,40,40,40,40,40,40,40,40,40,38,40,40,40,40,40,40,40,40,40,40,38",
                         "endOffsets": "30879,31348,31860,32372,32884,33396,33908,34420,34932,35444,35956,36034,36546,37058,37570,38082,38594,39106,39618,40130,40642,41154,41232,41744,42256,42768,43280,43792,44304,44816,45328,45840,46352,46430,46942,47454,47966,48478,48990,49502,50014,50526,51038,51550,51628,52140,52652,53164,53676,54188,54700,55212,55724,56236,56748,56826,56951,57033,57115,57197,57279,57361,57443,57525,57607,57689,57767,57849,57931,58013,58095,58177,58259,58341,58423,58505,58587,58665,58747,58829,58911,58993,59075,59157,59239,59321,59403,59485,59563,59645,59727,59809,59891,59973,60055,60137,60219,60301,60383,60461"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ILLEGEAR\\Downloads\\MAD-Chat\\GroupAssignmentRun1\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "10,1,6,9,4,3,11,5,7,8,2",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "490,16,278,428,192,128,538,232,340,384,73",
+                        "endColumns": "47,56,61,61,39,63,37,45,43,43,54",
+                        "endOffsets": "533,68,335,485,227,187,571,273,379,423,123"
+                    },
+                    "to": {
+                        "startLines": "1900,1901,1928,1929,1932,1955,2006,2007,2015,2016,2018",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "98571,98619,101953,102015,102266,104638,113364,113402,114385,114429,114544",
+                        "endColumns": "47,56,61,61,39,63,37,45,43,43,54",
+                        "endOffsets": "98614,98671,102010,102072,102301,104697,113397,113443,114424,114468,114594"
                     }
                 },
                 {
@@ -332,42 +402,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ILLEGEAR\\OneDrive\\exam\\GitHub\\MAD-Chat\\GroupAssignmentRun1\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "5,1",
-                        "startColumns": "4,4",
-                        "startOffsets": "311,64",
-                        "endLines": "7,4",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,305"
-                    },
-                    "to": {
-                        "startLines": "4281,4580",
-                        "startColumns": "4,4",
-                        "startOffsets": "263787,284631",
-                        "endLines": "4283,4583",
-                        "endColumns": "12,12",
-                        "endOffsets": "263950,284867"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ILLEGEAR\\OneDrive\\exam\\GitHub\\MAD-Chat\\GroupAssignmentRun1\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "9,8,7,2,3,4,10,5,6",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "392,339,287,57,100,148,433,196,246",
-                        "endColumns": "39,51,50,41,46,46,61,48,39",
-                        "endOffsets": "427,386,333,94,142,190,490,240,281"
-                    },
-                    "to": {
-                        "startLines": "533,541,542,565,566,571,576,579,590",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "27135,27633,27685,29105,29147,29494,29829,30006,30758",
-                        "endColumns": "39,51,50,41,46,46,61,48,39",
-                        "endOffsets": "27170,27680,27731,29142,29189,29536,29886,30050,30793"
-                    }
-                },
-                {
                     "source": "C:\\Users\\ILLEGEAR\\.gradle\\caches\\transforms-3\\2eaa0c19eb26b9b6d4ba5dcd06984332\\transformed\\appcompat-resources-1.3.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,29,36,47,74",
@@ -384,40 +418,6 @@
                         "endLines": "5919,5926,5937,9398,9403",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "373009,373394,373991,548367,548637"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ILLEGEAR\\OneDrive\\exam\\GitHub\\MAD-Chat\\GroupAssignmentRun1\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,719",
-                        "endColumns": "143,81,103,108,119,104,81",
-                        "endOffsets": "194,276,380,489,609,714,796"
-                    },
-                    "to": {
-                        "startLines": "1930,1938,1939,1940,1941,1942,2013",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "102077,102856,102938,103042,103151,103271,114250",
-                        "endColumns": "143,81,103,108,119,104,81",
-                        "endOffsets": "102216,102933,103037,103146,103266,103371,114327"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ILLEGEAR\\OneDrive\\exam\\GitHub\\MAD-Chat\\GroupAssignmentRun1\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "56",
-                        "endOffsets": "109"
-                    },
-                    "to": {
-                        "startLines": "540",
-                        "startColumns": "4",
-                        "startOffsets": "27576",
-                        "endColumns": "56",
-                        "endOffsets": "27628"
                     }
                 },
                 {

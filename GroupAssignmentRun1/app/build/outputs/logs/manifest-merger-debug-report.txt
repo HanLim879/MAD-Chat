@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
 MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\ae6077a403ada1468d799e8646ddf13c\transformed\viewbinding-7.0.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\deda953db319989ae56c095b0f3266f4\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3c14420b94172b9f51d84f55a177aa57\transformed\material-1.3.0\AndroidManifest.xml:17:1-24:12
@@ -66,27 +66,27 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\ILLEGEAR\.gradle\caches\transf
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\0883ae60da5efd7251db9ab270738c42\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\fe4d1d96bec1aec4c66a3095e5f7daea\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\8fac4fb576af4491cbd815d3ffbf825d\transformed\grpc-android-1.28.0\AndroidManifest.xml:2:1-13:12
-INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:1-47:12
 	package
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:3:5-46
-		INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\ae6077a403ada1468d799e8646ddf13c\transformed\viewbinding-7.0.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:7.0.4] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\ae6077a403ada1468d799e8646ddf13c\transformed\viewbinding-7.0.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\deda953db319989ae56c095b0f3266f4\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
@@ -211,18 +211,18 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\ILL
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\fe4d1d96bec1aec4c66a3095e5f7daea\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\8fac4fb576af4491cbd815d3ffbf825d\transformed\grpc-android-1.28.0\AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\8fac4fb576af4491cbd815d3ffbf825d\transformed\grpc-android-1.28.0\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:8:9-35
-		INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:11:5-67
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-firestore:23.0.2] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\08f2472234059f387bd31e618ba31ff2\transformed\firebase-firestore-23.0.2\AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:23.0.2] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\08f2472234059f387bd31e618ba31ff2\transformed\firebase-firestore-23.0.2\AndroidManifest.xml:14:5-67
 MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\c776b794c8f255f4a42b475245c5d9ed\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
@@ -232,9 +232,9 @@ MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\ILLEGEA
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3d58ac62373f72dc94dd373e879927ad\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3d58ac62373f72dc94dd373e879927ad\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:11:22-64
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:11:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:12:5-79
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-firestore:23.0.2] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\08f2472234059f387bd31e618ba31ff2\transformed\firebase-firestore-23.0.2\AndroidManifest.xml:13:5-79
@@ -250,25 +250,25 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\8fac4fb576af4491cbd815d3ffbf825d\transformed\grpc-android-1.28.0\AndroidManifest.xml:11:5-79
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\8fac4fb576af4491cbd815d3ffbf825d\transformed\grpc-android-1.28.0\AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:12:22-76
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:12:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:13:5-68
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:13:5-68
 MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
 MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
 MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\c776b794c8f255f4a42b475245c5d9ed\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
 MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\c776b794c8f255f4a42b475245c5d9ed\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
 	android:name
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:13:22-65
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:13:22-65
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:14:5-82
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:14:5-82
 MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
 MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\c776b794c8f255f4a42b475245c5d9ed\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\c776b794c8f255f4a42b475245c5d9ed\transformed\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
 	android:name
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:14:22-79
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:14:22-79
 application
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:16:5-45:19
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:16:5-45:19
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3c14420b94172b9f51d84f55a177aa57\transformed\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3c14420b94172b9f51d84f55a177aa57\transformed\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\e904d13c94fab84e5f7a903e18442a30\transformed\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
@@ -306,59 +306,59 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\523877eb5668d59771b7672f5c394fff\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\523877eb5668d59771b7672f5c394fff\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:supportsRtl
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:24:9-35
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:24:9-35
 	android:label
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:22:9-41
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:22:9-41
 	android:appComponentFactory
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:19:9-77
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:19:9-77
 	android:debuggable
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:20:9-35
 	android:testOnly
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:25:9-32
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:25:9-32
 	android:roundIcon
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:23:9-54
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:23:9-54
 	android:icon
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:21:9-43
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:21:9-43
 	android:allowBackup
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:26:9-57
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:26:9-57
 	android:name
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:17:9-61
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:17:9-61
 activity#com.example.groupassignmentrun1.activities.SplashActivity
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:28:9-36:20
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:28:9-36:20
 	android:exported
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:29:13-54
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:29:13-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:34:27-74
 activity#com.example.groupassignmentrun1.activities.SignUpActivity
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:37:9-39:58
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:37:9-39:58
 	android:windowSoftInputMode
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:39:13-55
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:39:13-55
 	android:name
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:38:13-54
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:38:13-54
 activity#com.example.groupassignmentrun1.activities.SignInActivity
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:40:9-43:58
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:40:9-43:58
 	android:windowSoftInputMode
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:43:13-55
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:43:13-55
 	android:exported
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:41:13-54
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:41:13-54
 activity#com.example.groupassignmentrun1.activities.MainActivity
-ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:44:9-61
+ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:44:9-61
 	android:name
-		ADDED from C:\Users\ILLEGEAR\OneDrive\exam\GitHub\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:44:19-58
+		ADDED from C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:44:19-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
 ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
 	android:exported
