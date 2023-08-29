@@ -1,0 +1,215 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.groupassignmentrun1"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:7:5-9:41
+8        android:minSdkVersion="16"
+8-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:8:9-35
+9        android:targetSdkVersion="30" />
+9-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:9:9-38
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:11:5-67
+11-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:11:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:12:5-79
+12-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:12:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+13-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:13:5-68
+13-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:13:22-65
+14    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+14-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:14:5-82
+14-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:14:22-79
+15
+16    <application
+16-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:16:5-45:19
+17        android:name="androidx.multidex.MultiDexApplication"
+17-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:17:9-61
+18        android:allowBackup="true"
+18-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:18:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:19:9-77
+20        android:debuggable="true"
+20-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:20:9-35
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:21:9-43
+22        android:label="@string/app_name"
+22-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:22:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:23:9-54
+24        android:supportsRtl="true"
+24-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:24:9-35
+25        android:testOnly="true"
+25-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:25:9-32
+26        android:theme="@style/Theme.GroupAssignmentRun1" >
+26-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:26:9-57
+27
+28        <!-- Specify your launcher activity -->
+29        <activity
+29-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:28:9-36:20
+30            android:name="com.example.groupassignmentrun1.activities.SplashActivity"
+30-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:29:13-54
+31            android:exported="true" >
+31-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:30:13-36
+32            <intent-filter>
+32-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:31:13-35:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:32:17-69
+33-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:32:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:34:17-77
+35-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:34:27-74
+36            </intent-filter>
+37        </activity> <!-- Define other activities here -->
+38        <activity
+38-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:37:9-39:58
+39            android:name="com.example.groupassignmentrun1.activities.SignUpActivity"
+39-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:38:13-54
+40            android:windowSoftInputMode="adjustResize" />
+40-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:39:13-55
+41        <activity
+41-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:40:9-43:58
+42            android:name="com.example.groupassignmentrun1.activities.SignInActivity"
+42-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:41:13-54
+43            android:exported="false"
+43-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:42:13-37
+44            android:windowSoftInputMode="adjustResize" />
+44-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:43:13-55
+45        <activity android:name="com.example.groupassignmentrun1.activities.MainActivity" />
+45-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:44:9-61
+45-->C:\Users\ILLEGEAR\Downloads\MAD-Chat\GroupAssignmentRun1\app\src\main\AndroidManifest.xml:44:19-58
+46
+47        <receiver
+47-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+48            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+48-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+49            android:exported="true"
+49-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+50            android:permission="com.google.android.c2dm.permission.SEND" >
+50-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+51            <intent-filter>
+51-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:32:13-34:29
+52                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+52-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:33:17-81
+52-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:33:25-78
+53            </intent-filter>
+54        </receiver>
+55        <!--
+56             FirebaseMessagingService performs security checks at runtime,
+57             but set to not exported to explicitly avoid allowing another app to call it.
+58        -->
+59        <service
+59-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+60            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+60-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+61            android:directBootAware="true"
+61-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+62            android:exported="false" >
+62-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+63            <intent-filter android:priority="-500" >
+63-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:45:13-47:29
+63-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:45:28-51
+64                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+64-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:46:17-78
+64-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:46:25-75
+65            </intent-filter>
+66        </service>
+67        <service
+67-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+68            android:name="com.google.firebase.components.ComponentDiscoveryService"
+68-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:50:13-84
+69            android:directBootAware="true"
+69-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\1be726f4cc194f23192b3bc9f20e7cdd\transformed\firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+70            android:exported="false" >
+70-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
+71            <meta-data
+71-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+72                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+72-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\586181f8afefd2b2eb95134357f46245\transformed\firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+74            <meta-data
+74-->[com.google.firebase:firebase-firestore:23.0.2] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\08f2472234059f387bd31e618ba31ff2\transformed\firebase-firestore-23.0.2\AndroidManifest.xml:20:13-22:85
+75                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+75-->[com.google.firebase:firebase-firestore:23.0.2] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\08f2472234059f387bd31e618ba31ff2\transformed\firebase-firestore-23.0.2\AndroidManifest.xml:21:17-111
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.firebase:firebase-firestore:23.0.2] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\08f2472234059f387bd31e618ba31ff2\transformed\firebase-firestore-23.0.2\AndroidManifest.xml:22:17-82
+77            <meta-data
+77-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3b3696991f1108271327cf36d5c5faab\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+78                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+78-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3b3696991f1108271327cf36d5c5faab\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3b3696991f1108271327cf36d5c5faab\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\1a44ce514c210484905bac361694f1e8\transformed\firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+81                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+81-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\1a44ce514c210484905bac361694f1e8\transformed\firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\1a44ce514c210484905bac361694f1e8\transformed\firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+83        </service>
+84
+85        <provider
+85-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\1be726f4cc194f23192b3bc9f20e7cdd\transformed\firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+86            android:name="com.google.firebase.provider.FirebaseInitProvider"
+86-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\1be726f4cc194f23192b3bc9f20e7cdd\transformed\firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+87            android:authorities="com.example.groupassignmentrun1.firebaseinitprovider"
+87-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\1be726f4cc194f23192b3bc9f20e7cdd\transformed\firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+88            android:directBootAware="true"
+88-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\1be726f4cc194f23192b3bc9f20e7cdd\transformed\firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+89            android:exported="false"
+89-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\1be726f4cc194f23192b3bc9f20e7cdd\transformed\firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+90            android:initOrder="100" />
+90-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\1be726f4cc194f23192b3bc9f20e7cdd\transformed\firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+91
+92        <activity
+92-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\4124835dacf819f2956de1ea46871643\transformed\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+93            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+93-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\4124835dacf819f2956de1ea46871643\transformed\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+94            android:exported="false"
+94-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\4124835dacf819f2956de1ea46871643\transformed\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+95-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\4124835dacf819f2956de1ea46871643\transformed\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+96
+97        <meta-data
+97-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3b0049b642274ee296454735b0eef216\transformed\play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+98            android:name="com.google.android.gms.version"
+98-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3b0049b642274ee296454735b0eef216\transformed\play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+99            android:value="@integer/google_play_services_version" />
+99-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3b0049b642274ee296454735b0eef216\transformed\play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+100
+101        <service
+101-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3d58ac62373f72dc94dd373e879927ad\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+102            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+102-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3d58ac62373f72dc94dd373e879927ad\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+103            android:exported="false" >
+103-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3d58ac62373f72dc94dd373e879927ad\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+104            <meta-data
+104-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3d58ac62373f72dc94dd373e879927ad\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+105                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+105-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3d58ac62373f72dc94dd373e879927ad\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+106                android:value="cct" />
+106-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\3d58ac62373f72dc94dd373e879927ad\transformed\transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+107        </service>
+108        <service
+108-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\b0f473164feb0687d2c00228850ee33c\transformed\transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+109            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+109-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\b0f473164feb0687d2c00228850ee33c\transformed\transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+110            android:exported="false"
+110-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\b0f473164feb0687d2c00228850ee33c\transformed\transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+111            android:permission="android.permission.BIND_JOB_SERVICE" >
+111-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\b0f473164feb0687d2c00228850ee33c\transformed\transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+112        </service>
+113
+114        <receiver
+114-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\b0f473164feb0687d2c00228850ee33c\transformed\transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+115            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+115-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\b0f473164feb0687d2c00228850ee33c\transformed\transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+116            android:exported="false" />
+116-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ILLEGEAR\.gradle\caches\transforms-3\b0f473164feb0687d2c00228850ee33c\transformed\transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+117    </application>
+118
+119</manifest>
