@@ -1,0 +1,25 @@
+com/example/groupassignmentrun1/firebase/MessagingService.java
+ com.example.groupassignmentrun1.firebase.MessagingService
+com/example/groupassignmentrun1/utilities/PreferenceManager.java
+ com.example.groupassignmentrun1.utilities.PreferenceManager
+com/example/groupassignmentrun1/databinding/ActivitySplashBinding.java
+ com.example.groupassignmentrun1.databinding.ActivitySplashBinding
+com/example/groupassignmentrun1/databinding/ActivitySignUpBinding.java
+ com.example.groupassignmentrun1.databinding.ActivitySignUpBinding
+com/example/groupassignmentrun1/activities/SplashActivity.java
+ com.example.groupassignmentrun1.activities.SplashActivity
+ com.example.groupassignmentrun1.activities.SplashActivity$1
+com/example/groupassignmentrun1/activities/SignInActivity.java
+ com.example.groupassignmentrun1.activities.SignInActivity
+com/example/groupassignmentrun1/BuildConfig.java
+ com.example.groupassignmentrun1.BuildConfig
+com/example/groupassignmentrun1/activities/SignUpActivity.java
+ com.example.groupassignmentrun1.activities.SignUpActivity
+com/example/groupassignmentrun1/databinding/ActivitySignInBinding.java
+ com.example.groupassignmentrun1.databinding.ActivitySignInBinding
+com/example/groupassignmentrun1/databinding/ActivityMainBinding.java
+ com.example.groupassignmentrun1.databinding.ActivityMainBinding
+com/example/groupassignmentrun1/utilities/Constants.java
+ com.example.groupassignmentrun1.utilities.Constants
+com/example/groupassignmentrun1/activities/MainActivity.java
+ com.example.groupassignmentrun1.activities.MainActivity
