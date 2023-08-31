@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Base64;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.groupassignmentrun1.databinding.ActivityMainBinding;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         preferenceManager = new PreferenceManager(getApplicationContext());
         loadUserDetails();
+        toUserProfile();
         getToken();
         setListeners();
     }
@@ -81,5 +83,15 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(),SignInActivity.class));
                 })
                 .addOnFailureListener(e -> showToast("Unable to sign out"));
+    }
+
+    private void toUserProfile(){
+        binding.toUserProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,UserProfile.class);
+                startActivity(intent);
+            }
+        });
     }
 }
