@@ -292,10 +292,11 @@ public class MainActivity extends BaseActivity implements ConversionListener {
                 try {
                     String temperature = response.getJSONObject("current").getString("temp_c");
                     String locationName = response.getJSONObject("location").getString("name");
-//                    binding.temperature1.setText(temperature);
-//                    binding.cityName1.setText(locationName);
+                    binding.weatherLocation.setText(locationName);
+                    binding.weatherTemperature.setText(temperature + " °C");
                     int isDay = response.getJSONObject("current").getInt("is_day");
                     String condition = response.getJSONObject("current").getJSONObject("condition").getString("text");
+                    binding.weatherCondition.setText(condition);
 //                    binding.condition1.setText(condition);
                     switch (condition) {
                         case "Partly cloudy":
