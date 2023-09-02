@@ -6,8 +6,10 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.groupassignmentrun1.R;
 import com.example.groupassignmentrun1.adapters.RecentConversationsAdapter;
 import com.example.groupassignmentrun1.databinding.ActivityMainBinding;
 import com.example.groupassignmentrun1.listeners.ConversionListener;
@@ -48,6 +50,7 @@ public class MainActivity extends BaseActivity implements ConversionListener {
         getToken();
         setListeners();
         listenConversations();
+        userProfileListener();
     }
 
     private void init() {
@@ -167,4 +170,16 @@ public class MainActivity extends BaseActivity implements ConversionListener {
         intent.putExtra(Constants.KEY_USER, user);
         startActivity(intent);
     }
+
+    private void userProfileListener(){
+        ImageView userProfile = findViewById(R.id.imageProfile);
+        userProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, UserProfile.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 }

@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroupAssignmentRun1">
         <activity
+            android:name=".activities.Account"
+            android:exported="false" />
+        <activity
             android:name=".activities.UserProfile"
             android:exported="false" />
         <activity
@@ -36,7 +39,7 @@
         <activity
             android:name=".activities.SignInActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".activities.MainActivity" />
 
         <service
