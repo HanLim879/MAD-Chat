@@ -3,10 +3,14 @@ package com.example.groupassignmentrun1.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.groupassignmentrun1.R;
@@ -22,23 +26,32 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.List;
 
-public class UserProfile extends BaseActivity{
-    //error
+public class UserProfile extends AppCompatActivity {
+
     private PreferenceManager preferenceManager;
-    private FirebaseFirestore database;
+    private ImageView profilePicture;
+    private TextView userName;
+    private TextView userEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
-        backToMainListener(); //back to main page
-        accountButtonLister(); //Account
-        logoutButtonLister(); //Logout
+        preferenceManager = new PreferenceManager(getApplicationContext());
+        profilePicture = findViewById(R.id.profilePicture);
+        userName=findViewById(R.id.userName);
+        userEmail=findViewById(R.id.userEmail);
+
+
+        backToMainListener(); //Back to main page
+        loadUserDetails(); //Display user profile picture, name, email on screen
+        accountButton(); //Account
+
     }
 
     //navigate to main page
-    private void backToMainListener(){
+    private void backToMainListener() {
         ImageView backToMainPage = findViewById(R.id.backBtn);
         backToMainPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,8 +62,18 @@ public class UserProfile extends BaseActivity{
         });
     }
 
+    //Display user profile picture, name, email on screen
+    private void loadUserDetails() {
+        byte[] bytes = Base64.decode(preferenceManager.getString(Constants.KEY_IMAGE), Base64.DEFAULT);
+        Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+        profilePicture.setImageBitmap(bitmap);
+        userName.setText(preferenceManager.getString(Constants.KEY_NAME));
+        userEmail.setText(preferenceManager.getString(Constants.KEY_EMAIL));
+    }
+
+
     //navigate to Account
-    private void accountButtonLister(){
+    private void accountButton() {
         Button accountBtn = findViewById(R.id.accountBtn);
         accountBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,38 +82,5 @@ public class UserProfile extends BaseActivity{
                 startActivity(intent);
             }
         });
-    }
-
-    //error
-    private void logoutButtonLister(){
-        Button logoutBtn = findViewById(R.id.logoutBtn);
-        logoutBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                signOut();
-            }
-        });
-    }
-
-    //error
-    private void signOut() {
-        showToast("Signing out...");
-        FirebaseFirestore database = FirebaseFirestore.getInstance();
-        DocumentReference documentReference =
-                database.collection(Constants.KEY_COLLECTION_USERS).document(
-                        preferenceManager.getString(Constants.KEY_USER_ID)
-                );
-        HashMap<String, Object> updates = new HashMap<>();
-        updates.put(Constants.KEY_FCM_TOKEN, FieldValue.delete());
-        documentReference.update(updates)
-                .addOnSuccessListener(unused -> {
-                    preferenceManager.clear();
-                    startActivity(new Intent(getApplicationContext(), SignInActivity.class));
-                })
-                .addOnFailureListener(e -> showToast("Unable to sign out"));
-    }
-
-    private void showToast(String message) {
-        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 }

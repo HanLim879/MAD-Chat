@@ -22,11 +22,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="300dp">
 
-                <!--My Profile-->
+                <!--Account-->
+
+                <!--The return back button-->
+
                 <TextView
-                    android:id="@+id/userProfile"
+                    android:id="@+id/account"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:text="Account"
                     android:textColor="@color/white"
                     android:textSize="35sp"
@@ -35,7 +39,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <!--The return back button-->
                 <ImageView
                     android:id="@+id/backBtn"
                     android:layout_width="40dp"
