@@ -104,6 +104,7 @@ public class MainActivity extends BaseActivity implements ConversionListener {
         binding.imageSignOut.setOnClickListener(v -> signOut());
         binding.fabNewChat.setOnClickListener(v ->
                 startActivity(new Intent(getApplicationContext(), UsersActivity.class)));
+        binding.scanQR.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), QRCodeScannerActivity.class)));
     }
 
     private void loadUserDetails() {
