@@ -16,6 +16,12 @@
         android:theme="@style/Theme.GroupAssignmentRun1"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activities.QRCodePage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Account"
+            android:exported="false" />
+        <activity
             android:name=".activities.QRCodeScannerActivity"
             android:exported="false" />
         <activity

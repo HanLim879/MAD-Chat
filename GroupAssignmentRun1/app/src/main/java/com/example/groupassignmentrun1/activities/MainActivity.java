@@ -105,6 +105,19 @@ public class MainActivity extends BaseActivity implements ConversionListener {
         binding.fabNewChat.setOnClickListener(v ->
                 startActivity(new Intent(getApplicationContext(), UsersActivity.class)));
         binding.scanQR.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), QRCodeScannerActivity.class)));
+        binding.imageProfile.setOnClickListener(v -> toProfilePage());
+    }
+
+    private void toProfilePage(){
+        Intent intent = new Intent(getApplicationContext(),UserProfile.class);
+        User user = new User();
+        user.name = preferenceManager.getString(Constants.KEY_NAME);
+        user.email = preferenceManager.getString(Constants.KEY_EMAIL);
+        user.image = preferenceManager.getString(Constants.KEY_IMAGE);
+        user.token = preferenceManager.getString(Constants.KEY_FCM_TOKEN);
+        user.id = preferenceManager.getString(Constants.KEY_USER_ID);
+        intent.putExtra(Constants.KEY_USER, user);
+        startActivity(intent);
     }
 
     private void loadUserDetails() {

@@ -1,26 +1,33 @@
 package com.example.groupassignmentrun1.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
-import com.example.groupassignmentrun1.databinding.ActivityMainBinding;
 import com.example.groupassignmentrun1.databinding.ActivityQrcodeScannerBinding;
+import com.example.groupassignmentrun1.listeners.UserListener;
+import com.example.groupassignmentrun1.models.User;
+import com.example.groupassignmentrun1.utilities.Constants;
 import com.google.zxing.Result;
 
-import me.dm7.barcodescanner.zxing.ZXingScannerView;
-import me.dm7.barcodescanner.zxing.ZXingScannerView.ResultHandler;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-public class QRCodeScannerActivity extends AppCompatActivity implements ResultHandler {
-    private ZXingScannerView scannerView;;
-    private ActivityQrcodeScannerBinding binding;
+import me.dm7.barcodescanner.zxing.ZXingScannerView;
+
+public class QRCodeScannerActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler, UserListener {
+
     private static final int CAMERA_PERMISSION_REQUEST = 100;
+    private ZXingScannerView scannerView;
+    private ActivityQrcodeScannerBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,17 +38,12 @@ public class QRCodeScannerActivity extends AppCompatActivity implements ResultHa
         // Initialize the ZXingScannerView
         scannerView = binding.scannerView;
 
-        // Configure the scanner settings, if needed
-        scannerView.setAutoFocus(true);
-        scannerView.setResultHandler(result -> {
-            // Handle the scanned QR code result here
-            String contents = result.getText();
-            // Do something with the scanned data
-        });
-
-        // Start the scanner
-        scannerView.startCamera();
-
+        // Check for camera permission and request if not granted
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, CAMERA_PERMISSION_REQUEST);
+        } else {
+            startScanner();
+        }
     }
 
     @Override
@@ -57,11 +59,22 @@ public class QRCodeScannerActivity extends AppCompatActivity implements ResultHa
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == CAMERA_PERMISSION_REQUEST) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Permission was granted, you can use the camera
+                // Permission was granted, start the scanner
+                startScanner();
             } else {
                 // Permission denied, handle accordingly (e.g., show a message to the user)
+                Toast.makeText(this, "Camera permission denied. Cannot scan QR codes.", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    private void startScanner() {
+        // Configure the scanner settings, if needed
+        scannerView.setAutoFocus(true);
+        scannerView.setResultHandler(this);
+
+        // Start the scanner
+        scannerView.startCamera();
     }
 
     @Override
@@ -69,12 +82,8 @@ public class QRCodeScannerActivity extends AppCompatActivity implements ResultHa
         try {
             // Handle the scanned QR code result here
             String contents = result.getText();
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            // Perform your desired action with the scanned data here
-            // For example, you can display it in a TextView, start a new activity, or send it to a server.
-            // Here, we'll display it in a Toast message.
-            Toast.makeText(this, "Scanned: " + contents, Toast.LENGTH_SHORT).show();
-
+            User user = fromQRCodeString(contents);
+            onUserClicked(user);
             // To continue scanning, you can call:
             // scannerView.resumeCameraPreview(this);
         } catch (Exception e) {
@@ -82,5 +91,33 @@ public class QRCodeScannerActivity extends AppCompatActivity implements ResultHa
             Toast.makeText(this, "Error scanning QR code.", Toast.LENGTH_SHORT).show();
         }
     }
-}
 
+    @Override
+    public void onUserClicked(User user) {
+        Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
+        intent.putExtra(Constants.KEY_USER, user);
+        startActivity(intent);
+        finish();
+    }
+
+    public static User fromQRCodeString(String jsonString) {
+        User user = new User();
+
+        try {
+            // Parse the JSON string into a JSONObject
+            JSONObject jsonObject = new JSONObject(jsonString);
+
+            // Extract the values from the JSONObject and set them in the User object
+            user.name = jsonObject.optString("name", "");
+            user.image = jsonObject.optString("image", "");
+            user.email = jsonObject.optString("email", "");
+            user.token = jsonObject.optString("token", "");
+            user.id = jsonObject.optString("id", "");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return user;
+    }
+
+}
