@@ -171,6 +171,7 @@ public class MainActivity extends BaseActivity implements ConversionListener {
         startActivity(intent);
     }
 
+    //Navigate to User Profile activity
     private void userProfileListener(){
         ImageView userProfile = findViewById(R.id.imageProfile);
         userProfile.setOnClickListener(new View.OnClickListener() {

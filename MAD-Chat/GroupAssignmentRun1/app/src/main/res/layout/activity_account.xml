@@ -22,10 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="260dp">
 
-                <!--Account-->
-
-                <!--The return back button-->
-
+                <!--The back button-->
                 <ImageView
                     android:id="@+id/backBtn"
                     android:layout_width="40dp"
@@ -35,7 +32,7 @@
                     app:srcCompat="@drawable/back_btn"
                     tools:ignore="VectorDrawableCompat" />
 
-                <!--User Profile Picture-->
+                <!--Account-->
                 <TextView
                     android:id="@+id/account"
                     android:layout_width="wrap_content"
@@ -51,6 +48,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0" />
 
+                <!--User Profile Picture-->
                 <com.makeramen.roundedimageview.RoundedImageView
                     android:id="@+id/profilePicture"
                     android:layout_width="150dp"
@@ -76,6 +74,8 @@
                 android:orientation="vertical"
                 android:padding="20dp">
 
+
+                <!--Edit user ID-->
                 <EditText
                     android:id="@+id/editID"
                     android:layout_width="match_parent"
@@ -88,8 +88,11 @@
                     android:drawablePadding="20dp"
                     android:hint="ID"
                     android:padding="8dp"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
 
+                <!--Edit user name-->
                 <EditText
                     android:id="@+id/editName"
                     android:layout_width="match_parent"
@@ -104,6 +107,7 @@
                     android:padding="8dp"
                     android:textSize="20sp"/>
 
+                <!--Edit user email-->
                 <EditText
                     android:id="@+id/editEmail"
                     android:layout_width="match_parent"
@@ -121,6 +125,7 @@
                     android:focusableInTouchMode="false"/>
             </LinearLayout>
 
+            <!--Save Changes Button-->
             <Button
                 android:id="@+id/saveChanges"
                 android:layout_width="match_parent"

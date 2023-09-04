@@ -14,9 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.groupassignmentrun1.R;
-import com.example.groupassignmentrun1.adapters.RecentConversationsAdapter;
-import com.example.groupassignmentrun1.databinding.ActivityMainBinding;
-import com.example.groupassignmentrun1.models.ChatMessage;
 import com.example.groupassignmentrun1.utilities.Constants;
 import com.example.groupassignmentrun1.utilities.PreferenceManager;
 import com.google.firebase.firestore.DocumentReference;
@@ -24,7 +21,6 @@ import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
-import java.util.List;
 
 public class UserProfile extends AppCompatActivity {
 
@@ -47,12 +43,14 @@ public class UserProfile extends AppCompatActivity {
         backToMainListener(); //Back to main page
         loadUserDetails(); //Display user profile picture, name, email on screen
         accountButton(); //Account
+        logoutButton(); //Logout
 
     }
 
-    //navigate to main page
+    //Navigate to main page
     private void backToMainListener() {
         ImageView backToMainPage = findViewById(R.id.backBtn);
+        //Event listener for back button
         backToMainPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,7 +70,7 @@ public class UserProfile extends AppCompatActivity {
     }
 
 
-    //navigate to Account
+    //Navigate to Account
     private void accountButton() {
         Button accountBtn = findViewById(R.id.accountBtn);
         accountBtn.setOnClickListener(new View.OnClickListener() {
@@ -82,5 +80,35 @@ public class UserProfile extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    //Logout
+    private void logoutButton() {
+        Button logout = findViewById(R.id.logoutBtn);
+        //Event listener for logout button
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showToast("Signing out...");
+                FirebaseFirestore database = FirebaseFirestore.getInstance();
+                DocumentReference documentReference =
+                        database.collection(Constants.KEY_COLLECTION_USERS).document(
+                                preferenceManager.getString(Constants.KEY_USER_ID)
+                        );
+                HashMap<String, Object> updates = new HashMap<>();
+                updates.put(Constants.KEY_FCM_TOKEN, FieldValue.delete());
+                documentReference.update(updates)
+                        .addOnSuccessListener(unused -> {
+                            preferenceManager.clear();
+                            startActivity(new Intent(getApplicationContext(), SignInActivity.class));
+                        })
+                        .addOnFailureListener(e -> showToast("Unable to sign out"));
+            }
+        });
+    }
+
+    //Show toast message
+    private void showToast(String message) {
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 }

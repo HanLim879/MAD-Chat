@@ -44,14 +44,15 @@ public class Account extends AppCompatActivity {
         editName = findViewById(R.id.editName);
         editEmail = findViewById(R.id.editEmail);
 
-        backToMainListener(); //back to User Profile
+        backToUserProfile(); //back to User Profile
         loadUserDetails(); //Display user details
         editProfile(); //Edit Profile
     }
 
     //navigate to User Profile
-    private void backToMainListener(){
+    private void backToUserProfile(){
         ImageView backToMainPage = findViewById(R.id.backBtn);
+        //Event listener for back button
         backToMainPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,20 +66,32 @@ public class Account extends AppCompatActivity {
     private void loadUserDetails() {
         byte[] bytes = Base64.decode(preferenceManager.getString(Constants.KEY_IMAGE), Base64.DEFAULT);
         Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-        profilePicture.setImageBitmap(bitmap);
-        editID.setText(preferenceManager.getString(Constants.KEY_USER_ID));
-        editName.setText(preferenceManager.getString(Constants.KEY_NAME));
-        editEmail.setText(preferenceManager.getString(Constants.KEY_EMAIL));
+        profilePicture.setImageBitmap(bitmap); //Display profile picture
+        editID.setText(preferenceManager.getString(Constants.KEY_USER_ID)); //Display User ID
+        editName.setText(preferenceManager.getString(Constants.KEY_NAME)); //Display User Name
+        editEmail.setText(preferenceManager.getString(Constants.KEY_EMAIL)); //Display User Email
     }
 
     //Edit Profile
     private void editProfile(){
-        //Event listener for Save Changes button
+        //Event listener for profile picture
+        profilePicture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeProfilePicture();;  //Select the picture to change in gallery
+            }
+        });
+
         Button saveChanges = findViewById(R.id.saveChanges);
+        //Event listener for Save Changes button
         saveChanges.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(isNameChanged()||isProfilePictureChanged()){
+                boolean isNameChanged = isNameChanged();
+                boolean isProfilePictureChanged = isProfilePictureChanged();
+
+                //If user make any changes in the user details
+                if(isNameChanged || isProfilePictureChanged){
                     showToast("User profile updated");
                 }
                 else{
@@ -87,13 +100,6 @@ public class Account extends AppCompatActivity {
             }
         });
 
-        //Event listener for profile picture
-        profilePicture.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                changeProfilePicture();;
-            }
-        });
     }
 
     //Edit name
@@ -127,6 +133,18 @@ public class Account extends AppCompatActivity {
 
         //If user edit the profile picture
         if(!encodedImage.equals(preferenceManager.getString(Constants.KEY_IMAGE))){
+            preferenceManager.putString(Constants.KEY_IMAGE, encodedImage); //update profile picture in PreferenceManager
+
+            //Unique identifier
+            String uid = preferenceManager.getString(Constants.KEY_USER_ID);
+            if(uid != null){
+                database.collection(Constants.KEY_COLLECTION_USERS)
+                        .document(uid) // search for userID
+                        .update(Constants.KEY_IMAGE, encodedImage) //update profile picture in database
+                        .addOnFailureListener(exception -> {
+                            showToast("Update Fail");
+                        });
+            }
             return true;
         }
         else{
@@ -134,24 +152,16 @@ public class Account extends AppCompatActivity {
         }
     }
 
+    //Show toast message
     private void showToast(String message){
         Toast.makeText(getApplicationContext(),message,Toast.LENGTH_SHORT).show();
     }
 
+    //Select the picture to change in gallery
     private void changeProfilePicture() {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         pickImage.launch(intent);
-    }
-
-    private String encodeImage(Bitmap bitmap){
-        int previewWidth = 150;
-        int previewHeight = bitmap.getHeight() * previewWidth / bitmap.getWidth();
-        Bitmap previewBitmap = Bitmap.createScaledBitmap(bitmap,previewWidth,previewHeight,false);
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        previewBitmap.compress(Bitmap.CompressFormat.JPEG,50,byteArrayOutputStream);
-        byte[] bytes = byteArrayOutputStream.toByteArray();
-        return Base64.encodeToString(bytes,Base64.DEFAULT);
     }
 
     private final ActivityResultLauncher<Intent> pickImage = registerForActivityResult(
@@ -171,4 +181,14 @@ public class Account extends AppCompatActivity {
                 }
             }
     );
+
+    private String encodeImage(Bitmap bitmap){
+        int previewWidth = 150;
+        int previewHeight = bitmap.getHeight() * previewWidth / bitmap.getWidth();
+        Bitmap previewBitmap = Bitmap.createScaledBitmap(bitmap,previewWidth,previewHeight,false);
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        previewBitmap.compress(Bitmap.CompressFormat.JPEG,50,byteArrayOutputStream);
+        byte[] bytes = byteArrayOutputStream.toByteArray();
+        return Base64.encodeToString(bytes,Base64.DEFAULT);
+    }
 }
