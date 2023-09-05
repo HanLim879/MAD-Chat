@@ -50,14 +50,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UserViewHold
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
         holder.setUserData(users.get(position));
-        Bitmap qrCode = generateQRCodeFromUser(users.get(position),300,300);
-        ImageView qrCodeImageView = holder.binding.qrCodeImageView; // Replace with the correct view reference
-        if (qrCode != null) {
-            // Set the generated QR code to the ImageView
-            qrCodeImageView.setImageBitmap(qrCode);
-        } else {
-            // Handle error case
-        }
+
     }
 
     @Override
@@ -87,32 +80,5 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UserViewHold
         return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
     }
 
-    public static Bitmap generateQRCodeFromUser(User user, int width, int height) {
-        try {
-            // Convert the User object to a string representation (customize this part based on your User class)
-            String userData = user.toString();
 
-            Map<EncodeHintType, Object> hints = new HashMap<>();
-            hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
-            BitMatrix bitMatrix = new MultiFormatWriter().encode(userData, BarcodeFormat.QR_CODE, width, height, hints);
-            int[] pixels = new int[width * height];
-
-            for (int y = 0; y < height; y++) {
-                for (int x = 0; x < width; x++) {
-                    if (bitMatrix.get(x, y)) {
-                        pixels[y * width + x] = 0xFF000000; // Black color
-                    } else {
-                        pixels[y * width + x] = 0xFFFFFFFF; // White color
-                    }
-                }
-            }
-
-            Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-            bitmap.setPixels(pixels, 0, width, 0, 0, width, height);
-            return bitmap;
-        } catch (WriterException e) {
-            Log.e("QRCodeGenerator", "Error generating QR code: " + e.getMessage());
-            return null;
-        }
-    }
 }

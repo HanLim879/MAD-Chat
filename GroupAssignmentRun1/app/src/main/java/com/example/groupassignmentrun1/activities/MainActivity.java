@@ -101,10 +101,9 @@ public class MainActivity extends BaseActivity implements ConversionListener {
     }
 
     private void setListeners() {
-        binding.imageSignOut.setOnClickListener(v -> signOut());
         binding.fabNewChat.setOnClickListener(v ->
                 startActivity(new Intent(getApplicationContext(), UsersActivity.class)));
-        binding.scanQR.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), QRCodeScannerActivity.class)));
+        binding.imageQRScanner.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), QRCodeScannerActivity.class)));
         binding.imageProfile.setOnClickListener(v -> toProfilePage());
     }
 
@@ -313,7 +312,6 @@ public class MainActivity extends BaseActivity implements ConversionListener {
                     binding.weatherCondition.setText(condition);
 //                    binding.condition1.setText(condition);
                     switch (condition) {
-                        case "Partly cloudy":
                         case "Cloudy":
                             binding.frameLayout.setBackgroundResource(R.drawable.cloudy);
                             break;
