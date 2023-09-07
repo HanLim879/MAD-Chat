@@ -78,6 +78,7 @@ public class ChatActivity extends BaseActivity {
         database = FirebaseFirestore.getInstance();
     }
 
+    //send message function, use hashmap to add chat boxes and profile pic
     private void sendMessage() {
         HashMap<String, Object> message = new HashMap<>();
         message.put(Constants.KEY_SENDER_ID, preferenceManager.getString(Constants.KEY_USER_ID));
@@ -99,7 +100,7 @@ public class ChatActivity extends BaseActivity {
             conversion.put(Constants.KEY_TIMESTAMP, new Date());
             addConversion(conversion);
         }
-        if (!isReceiverAvailable) {
+        if (!isReceiverAvailable) {//send notification when receiover availability ==0
             try {
                 JSONArray tokens = new JSONArray();
                 tokens.put(receiverUser.token);
@@ -126,7 +127,7 @@ public class ChatActivity extends BaseActivity {
             Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
         }
 
-        private void sendNotification (String messageBody){
+        private void sendNotification (String messageBody){//use api to send push notification
             ApiClient.getClient().create(ApiService.class).sendMessage(
                     Constants.getRemoteMsgHeaders(),
                     messageBody
@@ -160,7 +161,7 @@ public class ChatActivity extends BaseActivity {
             });
         }
 
-        private void listenAvailabilityOfReceiver () {
+        private void listenAvailabilityOfReceiver () {//check availability of users
             database.collection(Constants.KEY_COLLECTION_USERS).document(
                     receiverUser.id
             ).addSnapshotListener(ChatActivity.this, (value, error) -> {

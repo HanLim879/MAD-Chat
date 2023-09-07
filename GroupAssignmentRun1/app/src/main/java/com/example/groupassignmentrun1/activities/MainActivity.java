@@ -14,7 +14,6 @@ import android.os.Handler;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -45,7 +44,6 @@ import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -115,6 +113,7 @@ public class MainActivity extends BaseActivity implements ConversionListener {
         user.image = preferenceManager.getString(Constants.KEY_IMAGE);
         user.token = preferenceManager.getString(Constants.KEY_FCM_TOKEN);
         user.id = preferenceManager.getString(Constants.KEY_USER_ID);
+        user.password = preferenceManager.getString(Constants.KEY_PASSWORD);
         intent.putExtra(Constants.KEY_USER, user);
         startActivity(intent);
     }
