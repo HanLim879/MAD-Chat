@@ -55,18 +55,8 @@ public class UserProfile extends AppCompatActivity {
         backToMainPage.setOnClickListener(v -> onBackPressed());
         accountBtn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), Account.class)));
         qrBtn.setOnClickListener(v -> qrButton());
-        backToMainPage.setOnClickListener(v -> backToMainListener());
         logout.setOnClickListener(v -> logoutButton());
         accountBtn.setOnClickListener(v->accountButton());
-    }
-
-    //Navigate to main page
-    private void backToMainListener() {
-        //Event listener for back button
-
-        Intent intent = new Intent(UserProfile.this, MainActivity.class);
-        startActivity(intent);
-
     }
 
     //Display user profile picture, name, email on screen

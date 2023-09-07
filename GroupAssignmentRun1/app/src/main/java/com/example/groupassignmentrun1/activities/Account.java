@@ -33,6 +33,8 @@ public class Account extends AppCompatActivity {
     private ImageView profilePicture;
     private EditText editPassword, editName, editEmail;
     private String encodedImage;
+    private ImageView backToMainPage;
+    private Button saveChanges;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,24 +46,19 @@ public class Account extends AppCompatActivity {
         editPassword = findViewById(R.id.editPassword);
         editName = findViewById(R.id.editName);
         editEmail = findViewById(R.id.editEmail);
+        backToMainPage = findViewById(R.id.backBtn);
+        saveChanges = findViewById(R.id.saveChanges);
 
-        backToUserProfile(); //back to User Profile
+        setListeners(); //back to User Profile
         loadUserDetails(); //Display user details
         editProfile(); //Edit Profile
     }
 
-    //navigate to User Profile
-    private void backToUserProfile(){
-        ImageView backToMainPage = findViewById(R.id.backBtn);
-        //Event listener for back button
-        backToMainPage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Account.this, UserProfile.class);
-                startActivity(intent);
-            }
-        });
+    private void setListeners() {
+        backToMainPage.setOnClickListener(v -> onBackPressed());
     }
+
+    //navigate to User Profile
 
     //Display user details
     private void loadUserDetails() {
@@ -83,7 +80,8 @@ public class Account extends AppCompatActivity {
             }
         });
 
-        Button saveChanges = findViewById(R.id.saveChanges);
+
+
         //Event listener for Save Changes button
         saveChanges.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,12 +92,15 @@ public class Account extends AppCompatActivity {
                 boolean isEmailChanged = isEmailChanged();
 
                 //If user make any changes in the user details
-                if(isNameChanged || isProfilePictureChanged || isPasswordChanged){
-                    showToast("User profile updated");
+                if (isNameChanged || isProfilePictureChanged || isPasswordChanged || isEmailChanged) {
+                    showToast("User profile successfully updated!");
+                } else {
+                    showToast("Nothing has been changed!");
                 }
-                else{
-                    showToast("Update Fail");
-                }
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -134,12 +135,12 @@ public class Account extends AppCompatActivity {
     private boolean isEmailChanged(){
         FirebaseFirestore database = FirebaseFirestore.getInstance();
         String editedEmail=editEmail.getText().toString();
-        HashMap<String, Object> user = new HashMap<>();
+
 
         //If user edit the Email
         if(!preferenceManager.getString(Constants.KEY_EMAIL).equals(editedEmail)){
             preferenceManager.putString(Constants.KEY_EMAIL, editedEmail); //update name in PreferenceManager
-            user.put(Constants.KEY_EMAIL,editedEmail);
+
             //Unique identifier
             String uid = preferenceManager.getString(Constants.KEY_USER_ID);
             if(uid != null){
@@ -163,14 +164,14 @@ public class Account extends AppCompatActivity {
         String editedPassword=editPassword.getText().toString();
         //If user edit the Email
         if(!preferenceManager.getString(Constants.KEY_PASSWORD).equals(editedPassword)){
-            preferenceManager.putString(Constants.KEY_PASSWORD, editedPassword); //update name in PreferenceManager
+            preferenceManager.putString(Constants.KEY_PASSWORD, editedPassword); //update password in PreferenceManager
 
             //Unique identifier
             String uid = preferenceManager.getString(Constants.KEY_USER_ID);
             if(uid != null){
                 database.collection(Constants.KEY_COLLECTION_USERS)
                         .document(uid) // search for userID
-                        .update(Constants.KEY_PASSWORD,editedPassword) //update Email in database
+                        .update(Constants.KEY_PASSWORD,editedPassword) //update password in database
                         .addOnFailureListener(exception -> {
                             showToast("Update Fail");
                         });
