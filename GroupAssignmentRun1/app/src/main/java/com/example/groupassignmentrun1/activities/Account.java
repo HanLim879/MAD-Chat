@@ -87,14 +87,17 @@ public class Account extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 boolean isNameChanged = isNameChanged();
-                boolean isProfilePictureChanged = isProfilePictureChanged();
+                //boolean isProfilePictureChanged = isProfilePictureChanged();
                 boolean isPasswordChanged = isPasswordChanged();
                 boolean isEmailChanged = isEmailChanged();
 
                 //If user make any changes in the user details
-                if (isNameChanged || isProfilePictureChanged || isPasswordChanged || isEmailChanged) {
+                if (isNameChanged  || isPasswordChanged || isEmailChanged) {
                     showToast("User profile successfully updated!");
-                } else {
+                }else if(isProfilePictureChanged()){
+                    showToast("User profile successfully updated!");
+                }
+                else{
                     showToast("Nothing has been changed!");
                 }
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
