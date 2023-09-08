@@ -314,7 +314,7 @@ public class MainActivity extends BaseActivity implements ConversionListener {
                         case "Cloudy":
                             binding.frameLayout.setBackgroundResource(R.drawable.cloudy);
                             break;
-                        case "Partly Cloudy":
+                        case "Partly cloudy":
                             binding.frameLayout.setBackgroundResource(R.drawable.cloudy);
                             break;
                         case "Overcast":
