@@ -314,14 +314,103 @@ public class MainActivity extends BaseActivity implements ConversionListener {
                         case "Cloudy":
                             binding.frameLayout.setBackgroundResource(R.drawable.cloudy);
                             break;
+                        case "Overcast":
+                            binding.frameLayout.setBackgroundResource(R.drawable.cloudy);
+                            break;
+                        case "Mist":
+                            binding.frameLayout.setBackgroundResource(R.drawable.mist);
+                            break;
                         case "Rain":
                             binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Patchy rain possible":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Patchy sleet possible":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Patchy freezing drizzle possible":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Thundery outbreaks possible":
+                            binding.frameLayout.setBackgroundResource(R.drawable.thunder);
+                            break;
+                        case "Fog":
+                            binding.frameLayout.setBackgroundResource(R.drawable.mist);
+                            break;
+                        case "Freezing fog":
+                            binding.frameLayout.setBackgroundResource(R.drawable.mist);
+                            break;
+                        case "Patchy light drizzle":
+                            binding.frameLayout.setBackgroundResource(R.drawable.mist);
+                            break;
+                        case "Light drizzle":
+                            binding.frameLayout.setBackgroundResource(R.drawable.mist);
+                            break;
+                        case "Freezing drizzle":
+                            binding.frameLayout.setBackgroundResource(R.drawable.mist);
+                            break;
+
+                        case "Patchy light rain":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Light rain":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Moderate rain at times":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Moderate rain":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Heavy rain at times":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Heavy rain":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Light freezing rain":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Heavy freezing drizzle":
+                            binding.frameLayout.setBackgroundResource(R.drawable.mist);
+                            break;
+                        case "Moderate or heavy freezing rain":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Light sleet":
+                            binding.frameLayout.setBackgroundResource(R.drawable.mist);
+                            break;
+                        case "Moderate or heavy sleet":
+                            binding.frameLayout.setBackgroundResource(R.drawable.mist);
+                            break;
+                        case "Patchy light snow":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Light rain shower":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Moderate or heavy rain shower":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                        case "Patchy light rain with thunder":
+                            binding.frameLayout.setBackgroundResource(R.drawable.thunder);
+                            break;
+                            case "Torrential rain shower":
+                            binding.frameLayout.setBackgroundResource(R.drawable.rain);
+                            break;
+                            case "Moderate or heavy rain with thunder":
+                            binding.frameLayout.setBackgroundResource(R.drawable.thunder);
+                            break;
+                        case "Clear":
+                            binding.frameLayout.setBackgroundResource(R.drawable.clear);
                             break;
                         case "Sunny":
                             binding.frameLayout.setBackgroundResource(R.drawable.sunny);
                             break;
                         case "Thunderstorm":
                             binding.frameLayout.setBackgroundResource(R.drawable.thunder);
+                            break;
                         default:
                             break;
                     }
